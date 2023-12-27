@@ -1,9 +1,9 @@
 import { calculateInvestmentResults, formatter } from '../util/investment.js'
 
-const results = []
 export default function Results({ input }) {
-	calculateInvestmentResults(input, results)
-
+  calculateInvestmentResults(input, results)
+  
+  const results = []
 	if (results.length === 0) {
 		return <p className="center">Invalid input data provided. Duration must be at least 1.</p>
 	}
